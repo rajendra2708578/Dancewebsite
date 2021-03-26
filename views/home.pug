@@ -1,0 +1,46 @@
+extend base.pug
+
+block scripts
+  script(src='index.js')
+
+
+block style 
+    style
+      include style.css 
+
+block content 
+    section#introSection 
+        div  Welcome to wonder dance academy
+        div.small   Eat Dance Sleep Repeat
+
+    section#missionSection 
+         h2 Our Mission 
+         div.card 
+            h3 Dance Perfection 
+            div.card-box  
+                div.card-img 
+                    img(src="static/img/log1.jpg")
+                div.card-content 
+                    p This is the best dance academy in the hole universe
+         div.card 
+            h3 Dance the way you like 
+            div.card-box  
+                div.card-img 
+                    img(src="static/img/log2.jpg")
+                div.card-content 
+                    p This is the best dance academy in the hole universe
+         div.card 
+            h3 Expert in Teaching  
+            div.card-box  
+                div.card-img 
+                    img(src="static/img/log3.jpg")
+                div.card-content 
+                    p This is the best dance academy in the hole universe 
+
+    section#sponsorsSection 
+         h2 Our sponsors 
+         div#sponsor
+            img(src="static/SPONSOR/micro1.png", alt="Sponsor images" class="spimage")
+            img(src="static/SPONSOR/apple.png", alt="Sponsor images" class="spimage")
+            img(src="static/SPONSOR/fb.png", alt="Sponsor images" class="spimage")
+            img(src="static/SPONSOR/twi.jpg", alt="Sponsor images" class="spimage")    
